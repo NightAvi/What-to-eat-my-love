@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pizza Ideas</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Link to your main CSS file -->
+</head>
+<body>
+    <header>
+        <h1>Pizza Date Ideas</h1>
+    </header>
+
+    <section>
+        <h2>Explore the Best Pizza Places in El Paso</h2>
+        <ul>
+            <li><a href="https://www.examplepizzaplace1.com" target="_blank">Pizza Place 1</a></li>
+            <li><a href="https://www.examplepizzaplace2.com" target="_blank">Pizza Place 2</a></li>
+            <li><a href="https://www.examplepizzaplace3.com" target="_blank">Pizza Place 3</a></li>
+            <li><a href="https://www.examplepizzaplace4.com" target="_blank">Pizza Place 4</a></li>
+        </ul>
+    </section>
+
+    <section>
+        <h3>Your Own Idea</h3>
+        <p>If you have another pizza place in mind, let us know:</p>
+        <form action="confirmation.html" method="POST">
+            <label for="pizzaPlace">Your Pizza Idea:</label>
+            <textarea id="pizzaPlace" name="pizzaPlace" rows="4" placeholder="Describe your idea..."></textarea><br>
+            <input type="submit" value="Submit">
+        </form>
+    </section>
+
+    <footer>
+        <button onclick="window.history.back()">Go Back</button>
+    </footer>
+
+</body>
+</html>
