@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Dessert Date Ideas 🍨</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1>🍰 Sweet Spots in El Paso</h1>
+    <p>Because you're sweeter than dessert 😘</p>
+  </header>
+
+  <main class="card-container">
+    <div class="food-card">
+      <h2><a href="https://www.cravekitchenbar.com/" target="_blank">Crave</a></h2>
+      <p>Known for their banana cream pie – like a kiss in dessert form 💋</p>
+    </div>
+    <div class="food-card">
+      <h2><a href="https://www.magnoliakitchenbar.com/" target="_blank">Magnolia Kitchen</a></h2>
+      <p>Decadent cakes and cozy vibes 🕯️</p>
+    </div>
+    <div class="food-card">
+      <h2><a href="https://www.milkcrafters.com/" target="_blank">Milkcrft</a></h2>
+      <p>Ice cream that’s almost as cute as you 🍦</p>
+    </div>
+  </main>
+
+  <section>
+    <h3>💡 Got another idea?</h3>
+    <input type="text" placeholder="Type your idea here..." />
+    <button onclick="alert('Idea saved! Texting him now 📲')">Submit</button>
+  </section>
+
+  <footer>
+    <p>If you choose one, text me: <strong>(915) 555-4321</strong> 💬</p>
+    <p><a href="index.html">← Back to Main Menu</a></p>
+  </footer>
+</body>
+</html>
