@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Seafood 🦞</title>
+  <style>
+    body {
+      font-family: 'Comic Sans MS', cursive, sans-serif;
+      background: #e0ffff;
+      margin: 0;
+      padding: 20px;
+      text-align: center;
+    }
+    h1 {
+      color: #2e8b57;
+    }
+    .flirty-line {
+      font-style: italic;
+      color: #ff1493;
+      margin-bottom: 20px;
+    }
+    .place-card {
+      background: #fff;
+      border: 2px dashed #2e8b57;
+      border-radius: 20px;
+      padding: 15px;
+      margin: 15px auto;
+      width: 80%;
+      max-width: 400px;
+      box-shadow: 2px 2px 10px rgba(0,0,0,0.1);
+    }
+    a {
+      color: #2e8b57;
+      font-weight: bold;
+      text-decoration: none;
+    }
+    .back-link, .submit-idea {
+      margin-top: 30px;
+      display: block;
+    }
+    .idea-box {
+      margin-top: 20px;
+    }
+    input[type="text"] {
+      padding: 10px;
+      border-radius: 10px;
+      border: 1px solid #ccc;
+      width: 80%;
+      max-width: 300px;
+    }
+    button {
+      padding: 10px 20px;
+      margin-top: 10px;
+      border-radius: 10px;
+      border: none;
+      background-color: #20b2aa;
+      color: white;
+      font-weight: bold;
+      cursor: pointer;
+    }
+    button:hover {
+      background-color: #2e8b57;
+    }
+  </style>
+</head>
+<body>
+  <h1>Seafood 🦞</h1>
+  <div class="flirty-line">"Hooked on you, let’s enjoy some seafood!"</div>
+
+  <div class="place-card">
+    <a href="https://www.redlobster.com/" target="_blank">Red Lobster</a><br />
+    🦞 Lobster, shrimp, and fresh catches to fill your heart and stomach!
+  </div>
+
+  <div class="place-card">
+    <a href="https://www.longjohnsilvers.com/" target="_blank">Long John Silver's</a><br />
+    🦞 A fast, casual seafood option with crispy delights
+  </div>
+
+  <div class="place-card">
+    <a href="https://www.fishmarket.com/" target="_blank">The Fish Market</a><br />
+    🦞 A great choice for fresh and flavorful seafood dishes
+  </div>
+
+  <div class="idea-box">
+    <label for="customIdea">Got a favorite seafood spot?</label><br>
+    <input type="text" id="customIdea" placeholder="Let me know where you like to go!" />
+    <button onclick="submitIdea()">Submit</button>
+  </div>
+
+  <div class="back-link">
+    <a href="index.html">← Go back to all food cards</a>
+  </div>
+
+  <script>
+    function submitIdea() {
+      const idea = document.getElementById("customIdea").value;
+      if (idea) {
+        alert("Got it! I'll text you to confirm: [insert your number here 😘]");
+      } else {
+        alert("Type your idea first, cutie!");
+      }
+    }
+  </script>
+</body>
+</html>
