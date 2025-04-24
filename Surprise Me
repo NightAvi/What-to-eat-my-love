@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Surprise Me!</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #fff7e6;
+            text-align: center;
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+
+        h1 {
+            font-size: 2.5em;
+            margin-top: 20px;
+            color: #FF69B4;
+        }
+
+        .card {
+            display: inline-block;
+            background-color: #f8c7d1;
+            padding: 20px;
+            margin: 15px;
+            border-radius: 10px;
+            width: 250px;
+            text-align: center;
+            transition: transform 0.3s ease;
+        }
+
+        .card:hover {
+            transform: scale(1.1);
+        }
+
+        .card img {
+            width: 100px;
+            height: 100px;
+            animation: bounce 1s ease-in-out infinite;
+        }
+
+        @keyframes bounce {
+            0%, 100% {
+                transform: translateY(0);
+            }
+            50% {
+                transform: translateY(-20px);
+            }
+        }
+
+        .card p {
+            font-size: 1.2em;
+            font-weight: bold;
+        }
+
+        .bunny {
+            animation: wave 1.5s ease-in-out infinite;
+        }
+
+        @keyframes wave {
+            0% { transform: rotate(0deg); }
+            50% { transform: rotate(15deg); }
+            100% { transform: rotate(0deg); }
+        }
+
+        .frog {
+            animation: bounce 1s ease-in-out infinite;
+        }
+
+        .back-button {
+            background-color: #FF69B4;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            margin-top: 30px;
+            font-size: 1.2em;
+            cursor: pointer;
+        }
+
+        .back-button:hover {
+            background-color: #ff1493;
+        }
+
+        .input-container {
+            margin-top: 30px;
+        }
+
+        .input-container input {
+            padding: 10px;
+            width: 300px;
+            font-size: 1em;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+        }
+
+        .input-container button {
+            padding: 10px;
+            background-color: #FF69B4;
+            color: white;
+            border: none;
+            font-size: 1em;
+            margin-left: 10px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .input-container button:hover {
+            background-color: #ff1493;
+        }
+    </style>
+</head>
+<body>
+    <h1>Surprise Me!</h1>
+    <div class="card">
+        <img class="bunny" src="bunny-image.png" alt="Waving Bunny">
+        <p>Click for a surprise!</p>
+    </div>
+    <div class="card">
+        <img class="frog" src="frog-image.png" alt="Bouncing Frog">
+        <p>Click for a surprise!</p>
+    </div>
+    <div class="input-container">
+        <input type="text" id="userInput" placeholder="Your own surprise idea...">
+        <button onclick="submitIdea()">Submit</button>
+    </div>
+    <button class="back-button" onclick="goBack()">Go Back</button>
+
+    <script>
+        function goBack() {
+            window.history.back();
+        }
+
+        function submitIdea() {
+            const userInput = document.getElementById('userInput').value;
+            if (userInput) {
+                alert("Your idea has been submitted! Thank you for sharing!");
+                document.getElementById('userInput').value = ''; // Clear the input field
+            } else {
+                alert("Please enter an idea before submitting.");
+            }
+        }
+    </script>
+</body>
+</html>
