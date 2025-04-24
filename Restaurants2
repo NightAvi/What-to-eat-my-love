@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fancier Restaurants Date Ideas</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Link to your main CSS file -->
+</head>
+<body>
+    <header>
+        <h1>Fancier Restaurants Date Ideas</h1>
+    </header>
+
+    <section>
+        <h2>Explore the Best Fancier Restaurants in El Paso</h2>
+        <ul>
+            <li><a href="https://www.examplefancierrestaurant1.com" target="_blank">Fancier Restaurant 1</a></li>
+            <li><a href="https://www.examplefancierrestaurant2.com" target="_blank">Fancier Restaurant 2</a></li>
+            <li><a href="https://www.examplefancierrestaurant3.com" target="_blank">Fancier Restaurant 3</a></li>
+            <li><a href="https://www.examplefancierrestaurant4.com" target="_blank">Fancier Restaurant 4</a></li>
+        </ul>
+    </section>
+
+    <section>
+        <h3>Your Own Idea</h3>
+        <p>If you have another fancier restaurant in mind, let us know:</p>
+        <form action="confirmation.html" method="POST">
+            <label for="fancierRestaurant">Your Fancier Restaurant Idea:</label>
+            <textarea id="fancierRestaurant" name="fancierRestaurant" rows="4" placeholder="Describe your idea..."></textarea><br>
+            <input type="submit" value="Submit">
+        </form>
+    </section>
+
+    <footer>
+        <button onclick="window.history.back()">Go Back</button>
+    </footer>
+
+</body>
+</html>
