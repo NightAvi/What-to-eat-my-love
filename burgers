@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Burger Date Ideas 🍔</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1>🍔 Burger Date Spots in El Paso</h1>
+    <p>Pick the one that tempts your tastebuds</p>
+  </header>
+
+  <main class="card-container">
+    <div class="food-card">
+      <h2><a href="https://www.blazingtreebrewery.com/" target="_blank">Blazing Tree</a></h2>
+      <p>Burgers and brews in a fun, cozy spot.</p>
+    </div>
+    <div class="food-card">
+      <h2><a href="https://www.thehopselpaso.com/" target="_blank">The Hops</a></h2>
+      <p>Craft burgers & fries with a chill vibe.</p>
+    </div>
+    <div class="food-card">
+      <h2><a href="https://www.ribhut.com/" target="_blank">Rib Hut</a></h2>
+      <p>BBQ burgers with El Paso soul 🔥</p>
+    </div>
+  </main>
+
+  <section>
+    <h3>💡 Got another idea?</h3>
+    <input type="text" placeholder="Type your idea here..." />
+    <button onclick="alert('Idea saved! Texting him now 📲')">Submit</button>
+  </section>
+
+  <footer>
+    <p>If you choose one, text me: <strong>(915) 555-4321</strong> 💬</p>
+    <p><a href="index.html">← Back to Main Menu</a></p>
+  </footer>
+</body>
+</html>
