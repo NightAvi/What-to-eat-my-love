@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Thank You!</title>
+  <style>
+    body {
+      background-color: #fdf2f8;
+      font-family: 'Arial', sans-serif;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      min-height: 100vh;
+      margin: 0;
+      color: #444;
+    }
+
+    h1 {
+      font-size: 2.5em;
+      color: #ff69b4;
+      margin-bottom: 10px;
+      animation: fadeIn 1s ease-in-out;
+    }
+
+    p {
+      font-size: 1.2em;
+      margin: 10px 0 30px 0;
+      animation: fadeIn 1.5s ease-in-out;
+    }
+
+    .thank-you-img {
+      width: 150px;
+      animation: popUp 1s ease-in-out;
+    }
+
+    .home-btn {
+      background-color: #ff69b4;
+      color: white;
+      padding: 12px 25px;
+      font-size: 1.1em;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: background-color 0.3s;
+      animation: fadeIn 2s ease-in-out;
+    }
+
+    .home-btn:hover {
+      background-color: #ff1493;
+    }
+
+    @keyframes popUp {
+      0% { transform: scale(0.7); opacity: 0; }
+      100% { transform: scale(1); opacity: 1; }
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(10px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+  </style>
+</head>
+<body>
+  <img src="thank-you.png" alt="Thank You!" class="thank-you-img">
+  <h1>Thank You!</h1>
+  <p>Your suggestion has been received. You're awesome!</p>
+  <button class="home-btn" onclick="goHome()">Back to Home</button>
+
+  <script>
+    function goHome() {
+      window.location.href = 'index.html'; // Change this if your homepage has a different name
+    }
+  </script>
+</body>
+</html>
