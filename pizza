@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Pizza Night 🍕</title>
+  <style>
+    body {
+      font-family: 'Comic Sans MS', cursive, sans-serif;
+      background: #fff0f5;
+      margin: 0;
+      padding: 20px;
+      text-align: center;
+    }
+    h1 {
+      color: #e63946;
+    }
+    .flirty-line {
+      font-style: italic;
+      color: #ff69b4;
+      margin-bottom: 20px;
+    }
+    .place-card {
+      background: #ffe5b4;
+      border: 2px dashed #fa8072;
+      border-radius: 20px;
+      padding: 15px;
+      margin: 15px auto;
+      width: 80%;
+      max-width: 400px;
+      box-shadow: 2px 2px 10px rgba(0,0,0,0.1);
+    }
+    a {
+      color: #d62828;
+      font-weight: bold;
+      text-decoration: none;
+    }
+    .back-link, .submit-idea {
+      margin-top: 30px;
+      display: block;
+    }
+    .idea-box {
+      margin-top: 20px;
+    }
+    input[type="text"] {
+      padding: 10px;
+      border-radius: 10px;
+      border: 1px solid #ccc;
+      width: 80%;
+      max-width: 300px;
+    }
+    button {
+      padding: 10px 20px;
+      margin-top: 10px;
+      border-radius: 10px;
+      border: none;
+      background-color: #ff6f61;
+      color: white;
+      font-weight: bold;
+      cursor: pointer;
+    }
+    button:hover {
+      background-color: #e05b50;
+    }
+  </style>
+</head>
+<body>
+  <h1>Pizza Cravings? 🍕</h1>
+  <div class="flirty-line">"Let’s grab a slice... or share the whole pie like soulmates."</div>
+
+  <div class="place-card">
+    <a href="https://www.grimaldispizzeria.com/el-paso/" target="_blank">Grimaldi’s</a><br />
+    🍕 Cozy vibes + coal-fired deliciousness
+  </div>
+
+  <div class="place-card">
+    <a href="https://www.peterpiperpizza.com/locations/texas/el-paso" target="_blank">Peter Piper Pizza</a><br />
+    🎉 Throwback fun + arcade = chaos and cuddles
+  </div>
+
+  <div class="place-card">
+    <a href="https://www.thepizzajointelp.com/" target="_blank">The Pizza Joint</a><br />
+    🏙️ Funky spot downtown, thin crust heaven
+  </div>
+
+  <div class="place-card">
+    <a href="https://www.dominos.com/" target="_blank">Domino’s</a><br />
+    🛋️ Stay in + snuggle with our fave delivery
+  </div>
+
+  <div class="idea-box">
+    <label for="customIdea">Have your own pizza date idea?</label><br>
+    <input type="text" id="customIdea" placeholder="Type it here..." />
+    <button onclick="submitIdea()">Submit</button>
+  </div>
+
+  <div class="back-link">
+    <a href="index.html">← Go back to all food cards</a>
+  </div>
+
+  <script>
+    function submitIdea() {
+      const idea = document.getElementById("customIdea").value;
+      if (idea) {
+        alert("Got it! I'll text you to confirm: [insert your number here 😘]");
+      } else {
+        alert("Type your idea first, cutie!");
+      }
+    }
+  </script>
+</body>
+</html>
