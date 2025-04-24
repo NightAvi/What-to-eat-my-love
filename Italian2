@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Italian Food Date Ideas</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #fff0f5;
+            text-align: center;
+            padding: 20px;
+        }
+        .food-card {
+            background-color: #ffebcd;
+            margin: 20px;
+            padding: 15px;
+            border-radius: 10px;
+            border: 2px solid #f0a5a5;
+            display: inline-block;
+            width: 200px;
+            transition: transform 0.3s;
+        }
+        .food-card:hover {
+            transform: scale(1.05);
+        }
+        .card-title {
+            font-size: 20px;
+            font-weight: bold;
+            color: #b22222;
+        }
+        .card-content {
+            font-size: 16px;
+            color: #8b0000;
+        }
+        .input-idea {
+            width: 80%;
+            padding: 10px;
+            margin: 20px 0;
+            font-size: 16px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+        }
+        .submit-btn {
+            background-color: #ff1493;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            font-size: 16px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .submit-btn:hover {
+            background-color: #e60073;
+        }
+        .back-button {
+            background-color: #48c9b0;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+            cursor: pointer;
+            text-decoration: none;
+        }
+        .back-button:hover {
+            background-color: #1abc9c;
+        }
+    </style>
+</head>
+<body>
+    <h1>Italian Food Date Ideas</h1>
+    <div class="food-card">
+        <div class="card-title">Giuseppe's</div>
+        <div class="card-content">Authentic Italian cuisine with a cozy atmosphere. A perfect place for a romantic dinner!</div>
+        <a href="https://www.giuseppes-restaurant.com" target="_blank" class="submit-btn">Select Giuseppe's</a>
+    </div>
+    <div class="food-card">
+        <div class="card-title">Mama's Trattoria</div>
+        <div class="card-content">Homemade pasta and classic Italian dishes. It's like grandma's kitchen!</div>
+        <a href="https://www.mamastrattoria.com" target="_blank" class="submit-btn">Select Mama's</a>
+    </div>
+    <div class="food-card">
+        <div class="card-title">Pasta Bella</div>
+        <div class="card-content">Known for its fresh pasta and traditional sauces. A must-try Italian gem!</div>
+        <a href="https://www.pastabella.com" target="_blank" class="submit-btn">Select Pasta Bella</a>
+    </div>
+    <div class="input-idea">
+        <label for="own-idea">Got your own Italian spot? Tell us about it:</label>
+        <textarea id="own-idea" rows="4" placeholder="Type your idea here..."></textarea>
+        <br>
+        <button class="submit-btn">Submit Your Idea</button>
+    </div>
+    <a href="index.html" class="back-button">Back to Food Options</a>
+</body>
+</html>
