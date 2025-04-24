@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Seafood Date Ideas</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f8ff;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+        }
+        h1 {
+            color: #2E8B57;
+        }
+        .food-ideas {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+            margin: 20px;
+        }
+        .food-card {
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            width: 250px;
+            padding: 20px;
+            cursor: pointer;
+            transition: transform 0.3s ease;
+        }
+        .food-card:hover {
+            transform: scale(1.05);
+        }
+        .food-card img {
+            width: 100%;
+            border-radius: 8px;
+        }
+        .food-card p {
+            color: #333;
+            font-size: 16px;
+        }
+        .submit-idea {
+            margin-top: 20px;
+        }
+        input[type="text"], textarea {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border-radius: 8px;
+            border: 1px solid #ddd;
+        }
+        button {
+            background-color: #2E8B57;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+        button:hover {
+            background-color: #3CB371;
+        }
+    </style>
+</head>
+<body>
+    <h1>Seafood Date Ideas</h1>
+    <div class="food-ideas">
+        <div class="food-card" onclick="location.href='seafood-restaurant1.html'">
+            <img src="seafood1.jpg" alt="Seafood Restaurant 1">
+            <p>Seaside Dining with Fresh Catches</p>
+        </div>
+        <div class="food-card" onclick="location.href='seafood-restaurant2.html'">
+            <img src="seafood2.jpg" alt="Seafood Restaurant 2">
+            <p>Cozy Seafood Place by the Bay</p>
+        </div>
+        <div class="food-card" onclick="location.href='seafood-restaurant3.html'">
+            <img src="seafood3.jpg" alt="Seafood Restaurant 3">
+            <p>Crab Shack & Lobster Delights</p>
+        </div>
+    </div>
+    <div class="submit-idea">
+        <h2>Submit Your Own Seafood Date Idea</h2>
+        <input type="text" placeholder="Enter a Seafood Date Idea">
+        <textarea rows="4" placeholder="Write a description of your idea"></textarea>
+        <button>Submit Idea</button>
+    </div>
+</body>
+</html>
